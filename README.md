@@ -52,9 +52,6 @@ Translation files live under `languages/` as `wenstoncaptcha-{locale}.po` / `.mo
 
 Source strings in PHP are English; the template is `languages/wenstoncaptcha.pot`. After changing strings, run `wp i18n make-pot` and/or `msgfmt` to regenerate `.mo` files.
 
-## WordPress.org plugin directory
-
-The `assets/` directory holds `icon-128x128.png` and `icon-256x256.png` for the [plugin directory listing](https://developer.wordpress.org/plugins/wordpress-org/plugin-assets/). These files are **not** shipped in the installable plugin ZIP from WordPress.org; they are uploaded to the Subversion **`assets/`** folder at the **same level as `trunk`**, not inside `trunk`.
 
 ## License
 
