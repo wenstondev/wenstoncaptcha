@@ -48,7 +48,7 @@ $ok = $service->verify( $token_from_post, $user_input );
 
 Translation files live under `languages/` as `wenstoncaptcha-{locale}.po` / `.mo` (WordPress convention). Included locales:
 
-`de_DE`, `fr_FR`, `es_ES`, `it_IT`, `ru_RU`, `uk`, `sv_SE`, `fi`, `da_DK`, `bg_BG`, `el`, `ar`, `ja`, `zh_CN`, `pl_PL`, `cs_CZ`
+`de_DE`, `fr_FR`, `es_ES`, `it_IT`, `ru_RU`, `uk`, `sv_SE`, `fi`, `da_DK`, `bg_BG`, `el`, `pl_PL`, `cs_CZ`
 
 Source strings in PHP are English; the template is `languages/wenstoncaptcha.pot`. After changing strings, run `wp i18n make-pot` and/or `msgfmt` to regenerate `.mo` files.
 
