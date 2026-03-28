@@ -1,0 +1,25 @@
+# Spanish (Spain) translation for wenstonCaptcha
+# Copyright (C) 2025 wenstonCaptcha contributors
+msgid ""
+msgstr ""
+"Project-Id-Version: wenstonCaptcha 1.0.0\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Self-hosted image CAPTCHA for pages and Contact Form 7. No third-party APIs."
+msgstr "CAPTCHA de imagen alojado en su propio servidor para páginas y Contact Form 7. Sin APIs de terceros."
+
+msgid "Security code"
+msgstr "Código de seguridad"
+
+msgid "Characters from the image"
+msgstr "Caracteres de la imagen"
+
+msgid "CAPTCHA image"
+msgstr "Imagen CAPTCHA"
+
+msgid "The security code is invalid or has expired."
+msgstr "El código de seguridad no es válido o ha caducado."

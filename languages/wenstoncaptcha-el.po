@@ -1,0 +1,25 @@
+# Greek translation for wenstonCaptcha
+# Copyright (C) 2025 wenstonCaptcha contributors
+msgid ""
+msgstr ""
+"Project-Id-Version: wenstonCaptcha 1.0.0\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Self-hosted image CAPTCHA for pages and Contact Form 7. No third-party APIs."
+msgstr "Αυτοφιλοξενούμενο CAPTCHA εικόνας για σελίδες και Contact Form 7. Χωρίς API τρίτων."
+
+msgid "Security code"
+msgstr "Κωδικός ασφαλείας"
+
+msgid "Characters from the image"
+msgstr "Χαρακτήρες από την εικόνα"
+
+msgid "CAPTCHA image"
+msgstr "Εικόνα CAPTCHA"
+
+msgid "The security code is invalid or has expired."
+msgstr "Ο κωδικός ασφαλείας δεν είναι έγκυρος ή έχει λήξει."

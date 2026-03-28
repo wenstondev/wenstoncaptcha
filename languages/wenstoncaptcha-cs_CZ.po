@@ -1,0 +1,25 @@
+# Czech translation for wenstonCaptcha
+# Copyright (C) 2025 wenstonCaptcha contributors
+msgid ""
+msgstr ""
+"Project-Id-Version: wenstonCaptcha 1.0.0\n"
+"Language: cs_CZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : ((n>=2 && n<=4) ? 1 : 2);\n"
+
+msgid "Self-hosted image CAPTCHA for pages and Contact Form 7. No third-party APIs."
+msgstr "Vlastní obrázkové CAPTCHA pro stránky a Contact Form 7. Bez rozhraní třetích stran."
+
+msgid "Security code"
+msgstr "Bezpečnostní kód"
+
+msgid "Characters from the image"
+msgstr "Znaky z obrázku"
+
+msgid "CAPTCHA image"
+msgstr "Obrázek CAPTCHA"
+
+msgid "The security code is invalid or has expired."
+msgstr "Bezpečnostní kód je neplatný nebo vypršel."

@@ -1,0 +1,25 @@
+# Finnish translation for wenstonCaptcha
+# Copyright (C) 2025 wenstonCaptcha contributors
+msgid ""
+msgstr ""
+"Project-Id-Version: wenstonCaptcha 1.0.0\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Self-hosted image CAPTCHA for pages and Contact Form 7. No third-party APIs."
+msgstr "Itse isännöity kuva-CAPTCHA sivuille ja Contact Form 7:lle. Ei kolmannen osapuolen rajapintoja."
+
+msgid "Security code"
+msgstr "Turvakoodi"
+
+msgid "Characters from the image"
+msgstr "Merkit kuvasta"
+
+msgid "CAPTCHA image"
+msgstr "CAPTCHA-kuva"
+
+msgid "The security code is invalid or has expired."
+msgstr "Turvakoodi on virheellinen tai vanhentunut."

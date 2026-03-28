@@ -1,0 +1,26 @@
+# Copyright (C) 2025 wenstonCaptcha contributors
+# This file is distributed under the same license as the wenstonCaptcha plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: wenstonCaptcha 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-24 12:00+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Description of the plugin
+msgid "Self-hosted image CAPTCHA for pages and Contact Form 7. No third-party APIs."
+msgstr ""
+
+msgid "Security code"
+msgstr ""
+
+msgid "Characters from the image"
+msgstr ""
+
+msgid "CAPTCHA image"
+msgstr ""
+
+msgid "The security code is invalid or has expired."
+msgstr ""
