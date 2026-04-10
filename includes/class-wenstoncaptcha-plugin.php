@@ -85,9 +85,21 @@ final class WenstonCaptcha_Plugin
         return (string) ob_get_clean();
     }
 
+    /**
+     * Output CAPTCHA PNG for admin-ajax action `wenstoncaptcha_image`.
+     *
+     * Verifies `_wpnonce` (see WenstonCaptcha_Service::get_image_url). The challenge `token` is an additional secret.
+     * No `current_user_can()` check: CAPTCHA images must load for anonymous visitors on public forms.
+     */
     public function ajax_serve_image(): void
     {
-        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Public CAPTCHA image; secret token authenticates the request.
+        $nonce = isset($_GET['_wpnonce']) ? sanitize_text_field(wp_unslash((string) $_GET['_wpnonce'])) : '';
+        if ($nonce === '' || ! wp_verify_nonce($nonce, WenstonCaptcha_Service::IMAGE_NONCE_ACTION)) {
+            status_header(403);
+            exit;
+        }
+
+        // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Nonce verified above; `token` is the per-challenge secret from the same URL.
         $token = isset($_GET['token']) ? sanitize_text_field(wp_unslash((string) $_GET['token'])) : '';
         if ($token === '') {
             status_header(400);

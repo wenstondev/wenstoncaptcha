@@ -29,6 +29,9 @@ final class WenstonCaptcha_Service
 
     private const TRANSIENT_TTL = 600;
 
+    /** Nonce action for CAPTCHA image AJAX (verified in WenstonCaptcha_Plugin::ajax_serve_image). */
+    public const IMAGE_NONCE_ACTION = 'wenstoncaptcha_image';
+
     /**
      * @return array{token: string, code: string}
      */
@@ -78,12 +81,16 @@ final class WenstonCaptcha_Service
         return $trimmed !== '' && strtoupper($trimmed) === strtoupper($expected);
     }
 
+    /**
+     * AJAX image URL. Includes a nonce so only requests originating from generated markup are accepted.
+     */
     public function get_image_url(string $token): string
     {
         return add_query_arg(
             [
-                'action' => 'wenstoncaptcha_image',
-                'token'  => rawurlencode($token),
+                'action'   => 'wenstoncaptcha_image',
+                'token'    => rawurlencode($token),
+                '_wpnonce' => wp_create_nonce(self::IMAGE_NONCE_ACTION),
             ],
             admin_url('admin-ajax.php')
         );

@@ -1,14 +1,16 @@
 === wenstonCaptcha ===
 Contributors: wenstondev
-Tags: captcha, contact-form-7, spam, security, gdpr
+Tags: captcha, spam, security, gdpr
 Requires at least: 5.8
 Tested up to: 6.9
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Self-hosted image CAPTCHA for WordPress. No third-party services or external requests. Privacy-first CAPTCHA. GDPR compliant.
+
+For more information see https://wenston.io/
 
 == Description ==
 
@@ -39,6 +41,10 @@ Add a tag to your form template, for example:
 Validation runs automatically when the form is submitted.
 
 == Changelog ==
+
+= 1.0.1 =
+* Security: verify WordPress nonce on CAPTCHA image AJAX requests (`admin-ajax.php` action `wenstoncaptcha_image`).
+* Plugin package no longer ships WordPress.org directory-only icon PNGs (upload those via SVN `assets/` after approval).
 
 = 1.0.0 =
 * Initial release.

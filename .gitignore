@@ -1,3 +1,8 @@
 .DS_Store
 Thumbs.db
 *.log
+
+# WordPress.org plugin directory assets (icons, banners, screenshots) belong in SVN /assets, not in the plugin ZIP.
+assets/icon-*.png
+assets/banner-*.png
+assets/screenshot-*.png

@@ -2,6 +2,8 @@
 
 Self-hosted image CAPTCHA for WordPress. **Image generation** follows a typical self-hosted CAPTCHA approach (character set, dimensions, noise lines, GD fallback). **Storage** uses WordPress **transients** and a form token (no PHP sessions).
 
+For more information see **https://wenston.io/**
+
 ## Requirements
 
 - WordPress 5.8+
