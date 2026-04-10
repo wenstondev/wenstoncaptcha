@@ -10,8 +10,6 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Self-hosted image CAPTCHA for WordPress. No third-party services or external requests. Privacy-first CAPTCHA. GDPR compliant.
 
-For more information see https://wenston.io/
-
 == Description ==
 
 * Image CAPTCHA rendered with PHP GD (same character set and drawing approach as common self-hosted implementations).
