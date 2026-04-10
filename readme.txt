@@ -43,6 +43,7 @@ Validation runs automatically when the form is submitted.
 = 1.0.1 =
 * Security: verify WordPress nonce on CAPTCHA image AJAX requests (`admin-ajax.php` action `wenstoncaptcha_image`).
 * Plugin package no longer ships WordPress.org directory-only icon PNGs (upload those via SVN `assets/` after approval).
+* Added uninstall.php, security.md, and LICENSE.txt.
 
 = 1.0.0 =
 * Initial release.

@@ -86,14 +86,15 @@ final class WenstonCaptcha_Service
      */
     public function get_image_url(string $token): string
     {
-        return add_query_arg(
+        $ajax_base = add_query_arg(
             [
-                'action'   => 'wenstoncaptcha_image',
-                'token'    => rawurlencode($token),
-                '_wpnonce' => wp_create_nonce(self::IMAGE_NONCE_ACTION),
+                'action' => 'wenstoncaptcha_image',
+                'token'  => rawurlencode($token),
             ],
             admin_url('admin-ajax.php')
         );
+
+        return wp_nonce_url($ajax_base, self::IMAGE_NONCE_ACTION);
     }
 
     private function generate_token(): string
